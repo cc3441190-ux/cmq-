@@ -1,0 +1,17 @@
+# 原始提取素材（站点运行不需要）
+assets/hardware/aura/source/
+assets/hardware/portfolio-source/
+assets/hardware/portfolio.pdf
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# 系统 / 编辑器
+.DS_Store
+Thumbs.db
+.cursor/
+
+# 本地日志
+*.log

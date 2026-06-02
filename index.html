@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta name="description" content="陈孟秋 — 产品经理实习生。芒果 TV 实习、UniPass、用户研究与 AI 产品落地。" />
+  <title>陈孟秋 · 产品经理实习生</title>
+  <script>
+    window.SITE_VERSION = "20260603-contact-nav";
+    document.addEventListener("DOMContentLoaded", function () {
+      var v = window.SITE_VERSION;
+      document.querySelectorAll('img[src^="assets/"]').forEach(function (img) {
+        var src = img.getAttribute("src");
+        if (!src || src.indexOf("?v=") !== -1) return;
+        img.src = src + "?v=" + v;
+      });
+    });
+  </script>
+  <link rel="stylesheet" href="css/foxfolio.css?v=20260603-contact-nav" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .faq-content {
+      transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out, margin 0.5s ease-in-out;
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      margin-bottom: 0;
+    }
+    .faq-content.open {
+      max-height: 500px;
+      opacity: 1;
+      margin-bottom: 2rem;
+    }
+    .faq-icon {
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+    .faq-icon.open {
+      transform: rotate(45deg);
+      color: #ff3a00;
+    }
+  </style>
+</head>
+<body class="bg-black text-white font-sans selection:bg-[#FF3A00] selection:text-white relative foxfolio-root">
+
+  <div class="foxfolio-grid-lines" aria-hidden="true">
+    <div class="foxfolio-grid-line"></div>
+    <div class="foxfolio-grid-line"></div>
+    <div class="foxfolio-grid-line"></div>
+    <div class="foxfolio-grid-line"></div>
+    <div class="foxfolio-grid-line"></div>
+    <div class="foxfolio-grid-line"></div>
+  </div>
+
+  <section class="home-page" id="hero">
+    <header class="home-top">
+      <div class="home-top-left">
+        <span id="current-time" class="foxfolio-time-badge">--:--</span>
+        <span class="foxfolio-timezone">GMT+8</span>
+      </div>
+
+      <nav class="home-nav" aria-label="站点导航">
+        <a href="#hero" class="rolling-link" data-text="主页">主页</a>
+        <a href="#internship" class="rolling-link" data-text="实习经历">实习经历</a>
+        <a href="#works" class="rolling-link" data-text="项目经历">项目经历</a>
+        <a href="#hardware-projects" class="rolling-link" data-text="硬件项目">硬件项目</a>
+        <a href="#capabilities" class="rolling-link" data-text="核心能力">核心能力</a>
+        <a href="#growth-path" class="rolling-link" data-text="成长路径">成长路径</a>
+        <a href="#interview-qa" class="rolling-link" data-text="面试官">面试官</a>
+      </nav>
+
+      <div class="home-top-right">
+        <a href="#contact" class="home-cta rolling-link" data-text="联系我">联系我 →</a>
+        <a href="assets/resume.pdf" download="陈孟秋-产品实习简历.pdf" class="home-cta rolling-link" data-text="简历PDF">简历PDF →</a>
+        <button type="button" class="foxfolio-menu-btn" id="foxfolio-menu-btn" aria-expanded="false" aria-controls="foxfolio-mobile-nav" aria-label="打开菜单">
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <nav class="foxfolio-mobile-nav" id="foxfolio-mobile-nav" aria-label="移动端导航">
+      <a href="#hero">主页</a>
+      <a href="#internship">实习经历</a>
+      <a href="#works">项目经历</a>
+      <a href="#hardware-projects">硬件项目</a>
+      <a href="#capabilities">核心能力</a>
+      <a href="#growth-path">成长路径</a>
+      <a href="#interview-qa">面试官</a>
+      <a href="#contact">联系我</a>
+      <a href="assets/resume.pdf" download>简历 PDF</a>
+    </nav>
+
+    <div class="mouse-trail-layer" id="mouse-trail-layer" aria-hidden="true"></div>
+
+    <div class="home-visual" aria-hidden="true">
+      <div class="home-rings">
+        <span></span><span></span><span></span><span></span>
+      </div>
+      <img
+        src="assets/hero-nebula.png"
+        alt=""
+        class="home-nebula-img"
+        width="1200"
+        height="800"
+        decoding="async"
+      />
+    </div>
+
+    <div class="home-title-row">
+      <span class="home-title-word home-title-word--left rolling-link" data-text="Product">Product</span>
+      <span class="home-title-word home-title-word--right rolling-link" data-text="Portfolio">Portfolio</span>
+    </div>
+
+    <footer class="home-bottom">
+      <div class="home-bottom-left">
+        <p class="home-intro">陈孟秋 / 产品经理实习生 / 一周到岗</p>
+        <p class="home-tagline">产品设计背景，擅长用户研究、需求洞察、让产品真正解决问题</p>
+      </div>
+      <p class="home-date">2026.6</p>
+      <a href="#portfolio" class="home-scroll-btn" id="scroll-down-btn" aria-label="向下滚动">↓</a>
+    </footer>
+  </section>
+
+  <section id="about-me" class="relative z-10 w-full px-6 md:px-12 py-28 border-b border-white/10 bg-[#050505]">
+    <div class="max-w-[1200px] mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+        <div class="lg:col-span-5">
+          <span class="text-xs text-white/40 tracking-[0.22em] uppercase">About Me</span>
+          <h2 class="mt-5 text-[clamp(2.2rem,5.6vw,5rem)] leading-[1.03] tracking-[-0.04em] font-medium">
+            兼具<span class="text-[#FF3A00]">感性设计洞察</span>与<span class="text-white/45">理性逻辑思维</span>的产品经理。
+          </h2>
+          <p class="mt-8 text-white/75 leading-relaxed text-base md:text-lg">
+            从四川美术学院的工业设计专业出发，将严谨的系统思维无缝迁移至数字产品的服务体验构建。聚焦用户研究与需求分析，致力于以设计思维驱动 AI 创新应用与高商业价值的产品落地。
+          </p>
+        </div>
+
+        <div class="lg:col-span-7">
+          <div class="flex items-center justify-between mb-6">
+            <h3 class="text-lg md:text-xl font-medium tracking-tight">实战里程碑</h3>
+            <span class="text-xs text-white/40">Experience &amp; Projects</span>
+          </div>
+          <div class="space-y-5">
+            <article class="relative pl-6 py-6 pr-5 border border-white/10 bg-white/[0.02] rounded-xl">
+              <div class="absolute left-0 top-0 h-full w-px bg-gradient-to-b from-[#FF3A00] via-white/40 to-transparent"></div>
+              <span class="text-xs text-white/40 tracking-[0.14em] uppercase">01 / 商业化落地验证</span>
+              <h4 class="mt-2 text-lg md:text-xl font-medium">芒果 TV · 商业化技术中心 | 产品经理实习生</h4>
+              <p class="mt-3 text-sm md:text-[15px] text-white/72 leading-relaxed">
+                主导千万级平台流量入口的 0-1 构建与迭代。深度参与需求评审与测试流程，推动产品如期上线，在 Edge 扩展商店斩获 3000+ 安装量与 5.0 满分评价。通过主导 10+ 场深度用户访谈，精准提炼情绪价值需求，独立输出完整 PRD 与高保真原型，成功明确 2.0 版本的迭代路径。
+              </p>
+            </article>
+
+            <article class="relative pl-6 py-6 pr-5 border border-white/10 bg-white/[0.02] rounded-xl">
+              <div class="absolute left-0 top-0 h-full w-px bg-gradient-to-b from-[#FF3A00] via-white/40 to-transparent"></div>
+              <span class="text-xs text-white/40 tracking-[0.14em] uppercase">02 / AI Native 场景创新</span>
+              <h4 class="mt-2 text-lg md:text-xl font-medium">UniPass 实习社交与成长平台 | 产品负责人</h4>
+              <p class="mt-3 text-sm md:text-[15px] text-white/72 leading-relaxed">
+                聚焦大学生异地实习的破冰与沉淀痛点，独立完成从 0 到 1 的全链路 MVP 搭建。深度结合大模型能力，设计“LLM 职场语义重构”与“情绪识别”等差异化 AI 核心体验。独立输出产品架构图、AI 工作流及冷启动增长策略，打通商业化闭环。
+              </p>
+            </article>
+
+            <article class="relative pl-6 py-6 pr-5 border border-white/10 bg-white/[0.02] rounded-xl">
+              <div class="absolute left-0 top-0 h-full w-px bg-gradient-to-b from-[#FF3A00] via-white/40 to-transparent"></div>
+              <span class="text-xs text-white/40 tracking-[0.14em] uppercase">03 / 双边平台业务推演</span>
+              <h4 class="mt-2 text-lg md:text-xl font-medium">Share 退休青苗双赢计划 | 产品设计</h4>
+              <p class="mt-3 text-sm md:text-[15px] text-white/72 leading-relaxed">
+                针对老龄化背景下的经验资源错配问题，探索并设计经验共享型双边交易平台。系统拆解“退休人群、职场新人、企业 HR”三端核心诉求，设计精准的智能匹配与实名认证安全机制，跑通以服务抽成为核心的变现逻辑与产品高保真原型。
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-14 pt-10 border-t border-white/10">
+        <div class="flex items-center justify-between mb-6">
+          <h3 class="text-lg md:text-xl font-medium tracking-tight">硬核武器库</h3>
+          <span class="text-xs text-white/40">Tool Stack</span>
+        </div>
+        <div class="tool-marquee" aria-label="Tool Stack">
+          <div class="tool-marquee__track">
+            <span class="tool-pill">产品与交互架构：Figma / Axure / XMind / ProcessOn</span>
+            <span class="tool-pill">研究与数据洞察：独立输出完整 PRD</span>
+            <span class="tool-pill">12 场+ 深度访谈经验</span>
+            <span class="tool-pill">需求优先级划分（P0/P1/P2）</span>
+            <span class="tool-pill">Excel 基础数据分析</span>
+            <span class="tool-pill">底层基础与语言：英语 CET-6 / 普通话二级乙等</span>
+            <span class="tool-pill">具备 PS / AI / AE 视觉基础</span>
+          </div>
+          <div class="tool-marquee__track" aria-hidden="true">
+            <span class="tool-pill">产品与交互架构：Figma / Axure / XMind / ProcessOn</span>
+            <span class="tool-pill">研究与数据洞察：独立输出完整 PRD</span>
+            <span class="tool-pill">12 场+ 深度访谈经验</span>
+            <span class="tool-pill">需求优先级划分（P0/P1/P2）</span>
+            <span class="tool-pill">Excel 基础数据分析</span>
+            <span class="tool-pill">底层基础与语言：英语 CET-6 / 普通话二级乙等</span>
+            <span class="tool-pill">具备 PS / AI / AE 视觉基础</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-14 pt-10 border-t border-white/10">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="border border-white/10 p-8 flex flex-col hover:bg-white/[0.02] transition-colors rounded-sm">
+            <span class="text-xs text-white/50 mb-2 tracking-widest">EDUCATION</span>
+            <span class="text-sm mb-8 text-white/80">培养了敏锐的嗅觉与严谨的系统思维。</span>
+            <h3 class="text-4xl font-medium tracking-tighter mb-4">四川美术学院</h3>
+            <span class="text-base text-white/60 mb-8">SCFAI · 工业设计</span>
+            <ul class="flex flex-col gap-4 text-sm text-white/70">
+              <li class="flex items-start gap-3">
+                <div class="w-1.5 h-1.5 rounded-full bg-white/30 mt-1.5 shrink-0"></div>
+                <div><strong class="text-white font-medium block">研究生 · 工业设计（产品方向）</strong><span class="text-xs text-white/40 mt-1 block">2025.09 — 至今 · AIGC 产品创新 · 用户研究与需求分析</span></div>
+              </li>
+              <li class="flex items-start gap-3">
+                <div class="w-1.5 h-1.5 rounded-full bg-white/30 mt-1.5 shrink-0"></div>
+                <div><strong class="text-white font-medium block">本科 · 工业设计</strong><span class="text-xs text-white/40 mt-1 block">2021.09 — 2025.06 · 设计思维 · 互联网产品设计</span></div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="bg-[#FF3A00] text-black p-8 flex flex-col rounded-sm shadow-2xl">
+            <span class="text-xs text-black/60 mb-2 font-bold tracking-widest">STATUS · 求职状态</span>
+            <span class="text-sm mb-8 font-medium">寻找充满挑战的产品团队。</span>
+            <h3 class="text-5xl font-medium tracking-tighter mb-8">随时到岗</h3>
+            <ul class="flex flex-col gap-4 text-sm font-medium mb-10 flex-grow">
+              <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 rounded-full bg-black/40"></span><span>期望岗位：产品经理实习生 / 产品策划</span></li>
+              <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 rounded-full bg-black/40"></span>核心深耕：AI 场景化落地与平台 MVP 构建</li>
+              <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 rounded-full bg-black/40"></span>独特壁垒：懂设计的逻辑派，极低沟通成本的执行者</li>
+            </ul>
+            <a href="assets/resume.pdf" download="陈孟秋-产品实习简历.pdf" class="w-full py-4 bg-black text-white text-sm hover:bg-black/80 transition-colors duration-300 text-center font-medium rounded-sm">获取完整简历 →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="portfolio">
+    <div class="section-header">
+      <h2 class="section-title">展映集</h2>
+      <div class="section-badge">(2025—2026)</div>
+    </div>
+
+    <div class="portfolio-slider-wrap">
+    <div class="portfolio-slider" id="portfolio-slider">
+      <a
+        href="#internship"
+        class="portfolio-card portfolio-card--hover-cycle"
+        data-portfolio-cycle
+        data-cycle-ms="1400"
+        aria-label="i芒果浏览器新标签页插件"
+      >
+        <div class="portfolio-img-wrapper">
+          <!-- 默认封面：01；悬停依次播放 02、03…（04、05 为预留位，放好图后自动加入轮播） -->
+          <img
+            class="portfolio-cycle-img is-active"
+            src="assets/portfolio/mango-tab/01.png"
+            alt="i芒果浏览器新标签页插件 — 封面"
+            data-cycle-order="0"
+          />
+          <img
+            class="portfolio-cycle-img"
+            src="assets/portfolio/mango-tab/02.png"
+            alt="i芒果浏览器新标签页插件 — 展示 2"
+            data-cycle-order="1"
+          />
+          <img
+            class="portfolio-cycle-img"
+            src="assets/portfolio/mango-tab/03.png"
+            alt="i芒果浏览器新标签页插件 — 展示 3"
+            data-cycle-order="2"
+          />
+          <img
+            class="portfolio-cycle-img"
+            src="assets/portfolio/mango-tab/04.png"
+            alt="i芒果浏览器新标签页插件 — 展示 4"
+            data-cycle-order="3"
+          />
+          <img
+            class="portfolio-cycle-img"
+            src="assets/portfolio/mango-tab/05.png"
+            alt="i芒果浏览器新标签页插件 — 展示 5"
+            data-cycle-order="4"
+          />
+        </div>
+        <div class="portfolio-title">i芒果浏览器新标签页插件</div>
+      </a>
+
+      <a
+        href="https://unipass-nu.vercel.app/marketing#demo"
+        class="portfolio-card portfolio-card--embed"
+        data-embed-scroll
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="UniPass — 悬停自动浏览网页，点击打开全站"
+      >
+        <div class="portfolio-img-wrapper portfolio-embed-viewport">
+          <div class="portfolio-embed__scroller">
+            <iframe
+              src="https://unipass-nu.vercel.app/marketing#demo"
+              title="UniPass 产品营销页预览"
+              loading="lazy"
+              tabindex="-1"
+            ></iframe>
+          </div>
+          <span class="portfolio-embed-hint">悬停自动浏览 · 点击打开全站</span>
+        </div>
+        <div class="portfolio-title">UniPass</div>
+      </a>
+
+      <a
+        href="https://meituan-agent.vercel.app/demo"
+        class="portfolio-card portfolio-card--embed"
+        data-embed-scroll
+        data-embed-height="4200"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="本地出行 Agent Demo — 悬停自动浏览，点击打开"
+      >
+        <div class="portfolio-img-wrapper portfolio-embed-viewport">
+          <div class="portfolio-embed__scroller">
+            <iframe
+              src="https://meituan-agent.vercel.app/demo"
+              title="本地出行 Agent Demo 预览"
+              loading="lazy"
+              tabindex="-1"
+            ></iframe>
+          </div>
+          <span class="portfolio-embed-hint">悬停自动浏览 · 点击打开全站</span>
+        </div>
+        <div class="portfolio-title">本地出行 Agent</div>
+      </a>
+
+      <a
+        href="https://joblens-pi.vercel.app/"
+        class="portfolio-card portfolio-card--embed"
+        data-embed-scroll
+        data-embed-height="5200"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="joblens — 悬停自动浏览网页，点击打开全站"
+      >
+        <div class="portfolio-img-wrapper portfolio-embed-viewport">
+          <div class="portfolio-embed__scroller">
+            <iframe
+              src="https://joblens-pi.vercel.app/"
+              title="joblens 产品页预览"
+              loading="lazy"
+              tabindex="-1"
+            ></iframe>
+          </div>
+          <span class="portfolio-embed-hint">悬停自动浏览 · 点击打开全站</span>
+        </div>
+        <div class="portfolio-title">joblens</div>
+      </a>
+
+      <a
+        href="#hardware-projects"
+        class="portfolio-card portfolio-card--hover-cycle portfolio-card--hardware"
+        data-portfolio-cycle
+        data-cycle-ms="1200"
+        aria-label="硬件设计课题 — Aura / BOND PLAY / Safety Seat，点击查看"
+      >
+        <div class="portfolio-img-wrapper">
+          <img
+            class="portfolio-cycle-img is-active"
+            src="assets/hardware/aura/hero-01.png"
+            alt="Aura — AI 车载机器人"
+            data-cycle-order="0"
+            decoding="async"
+          />
+          <img
+            class="portfolio-cycle-img"
+            src="assets/hardware/bond/hero-home.png"
+            alt="BOND PLAY — 产康 IoT"
+            data-cycle-order="1"
+            decoding="async"
+          />
+          <img
+            class="portfolio-cycle-img"
+            src="assets/hardware/safety/hero-home.png"
+            alt="Safety Seat — 便捷安全座椅"
+            data-cycle-order="2"
+            decoding="async"
+          />
+          <img
+            class="portfolio-cycle-img"
+            src="assets/hardware/aura/hero-02.png"
+            alt="Aura — 展示 2"
+            data-cycle-order="3"
+            decoding="async"
+          />
+          <img
+            class="portfolio-cycle-img"
+            src="assets/hardware/bond/products.png"
+            alt="BOND PLAY — 三端生态"
+            data-cycle-order="4"
+            decoding="async"
+          />
+          <img
+            class="portfolio-cycle-img"
+            src="assets/hardware/safety/exploded.png"
+            alt="Safety Seat — 结构剖析"
+            data-cycle-order="5"
+            decoding="async"
+          />
+          <span class="portfolio-hw-badge">硬件课题 · 3 项</span>
+        </div>
+        <div class="portfolio-title">硬件设计研究 · Aura / BOND / Safety</div>
+      </a>
+    </div>
+    <button class="portfolio-scroll-arrow" id="portfolio-scroll-arrow" aria-label="向右滚动查看更多">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18l6-6-6-6"/></svg>
+    </button>
+    </div>
+  </section>
+
+  <section class="section internship-section" id="internship">
+    <header class="internship-head">
+      <h2 class="internship-head__title">实习项目<sup class="internship-head__index">(01)</sup></h2>
+    </header>
+
+    <article class="internship-project">
+      <div class="internship-project__grid">
+        <div
+          class="internship-project__media portfolio-embed-viewport internship-pages-viewport"
+          data-embed-scroll
+          data-embed-pages
+          aria-label="芒果浏览器新标签页插件 — 悬停自动浏览共 5 页"
+        >
+          <div class="portfolio-embed__scroller embed-pages-scroller">
+            <div class="embed-page">
+              <img src="assets/portfolio/mango-tab/01.png" alt="芒果插件 — 第 1 页" loading="lazy" decoding="async" />
+            </div>
+            <div class="embed-page">
+              <img src="assets/portfolio/mango-tab/02.png" alt="芒果插件 — 第 2 页" loading="lazy" decoding="async" />
+            </div>
+            <div class="embed-page">
+              <img src="assets/portfolio/mango-tab/03.png" alt="芒果插件 — 第 3 页" loading="lazy" decoding="async" />
+            </div>
+            <div class="embed-page">
+              <img src="assets/portfolio/mango-tab/04.png" alt="芒果插件 — 第 4 页" loading="lazy" decoding="async" />
+            </div>
+            <div class="embed-page">
+              <img src="assets/portfolio/mango-tab/05.png" alt="芒果插件 — 第 5 页" loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <span class="portfolio-embed-hint">悬停自动浏览 · 共 5 页</span>
+        </div>
+        <div class="internship-project__content">
+          <div class="work-number">001</div>
+          <h3 class="internship-project__title">芒果浏览器新标签页插件</h3>
+          <p class="internship-project__role">芒果 TV · 商业化技术中心｜产品经理实习生</p>
+          <p class="internship-project__desc">
+            公司级 PC 端战略项目，围绕「浏览器默认首页」场景，打造集内容分发、工具服务与情绪价值于一体的插件产品，承接用户增长与转化，并主导 1.0→2.0 迭代。
+          </p>
+          <div class="internship-project__meta">
+            <div class="meta-col">
+              <span class="meta-label">Year</span>
+              <span class="meta-value">2026</span>
+            </div>
+            <div class="meta-col">
+              <span class="meta-label">职责</span>
+              <span class="meta-value">需求设计与 PRD 输出</span>
+              <span class="meta-value">产品上线推进</span>
+              <span class="meta-value">用研驱动迭代（1.0—2.0）</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="internship-stats" aria-label="项目数据">
+        <div class="internship-stat">
+          <strong class="internship-stat__value">3000+</strong>
+          <span class="internship-stat__label">Edge 安装量</span>
+        </div>
+        <div class="internship-stat">
+          <strong class="internship-stat__value">0—1.0</strong>
+          <span class="internship-stat__label">产品版本</span>
+        </div>
+        <div class="internship-stat">
+          <strong class="internship-stat__value">10+</strong>
+          <span class="internship-stat__label">用户深访</span>
+        </div>
+        <div class="internship-stat">
+          <strong class="internship-stat__value">5.0</strong>
+          <span class="internship-stat__label">Edge 评分</span>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <section class="section" id="works">
+    <div class="section-header">
+      <h2 class="section-title">项目经历</h2>
+      <div class="section-badge">(03)</div>
+    </div>
+
+    <div class="works-list">
+      <article class="work-feature" id="work-unipass">
+        <div class="work-feature__layout">
+        <header class="work-feature__head">
+          <div class="work-feature__eyebrow">
+            <span class="work-number">001</span>
+            <span class="work-feature__year">2025 — 2026</span>
+          </div>
+          <h3 class="work-feature__title">UniPass</h3>
+          <p class="work-feature__tagline">实习不孤单，AI 陪你过</p>
+          <p class="work-feature__lead">
+            从 0 到 1 的 AI Native 实习陪伴产品：洞察 → 方案 → 可交互 Demo。
+            组局破冰、职场表达、成就胶囊，把社交与成长收进同一套体验里。
+          </p>
+          <div class="work-feature__pillars" aria-label="UniPass 核心亮点">
+            <div class="work-feature__pillar">
+              <strong>4大</strong>
+              <span>核心模块</span>
+            </div>
+            <div class="work-feature__pillar">
+              <strong>AI</strong>
+              <span>职场表达优化</span>
+            </div>
+            <div class="work-feature__pillar">
+              <strong>匿名</strong>
+              <span>情报社区</span>
+            </div>
+            <div class="work-feature__pillar">
+              <strong>MVP</strong>
+              <span>独立搭建</span>
+            </div>
+          </div>
+          <ul class="work-feature__tags" aria-label="项目关键词">
+            <li>0—1 产品</li>
+            <li>用户研究</li>
+            <li>LLM 工作流</li>
+            <li>Vibe Coding</li>
+          </ul>
+          <div class="work-feature__actions">
+            <a
+              href="https://unipass-nu.vercel.app/marketing#demo"
+              class="btn-visit rolling-link"
+              data-text="体验 Demo ↗"
+              target="_blank"
+              rel="noopener noreferrer"
+            >体验 Demo ↗</a>
+          </div>
+          <div class="work-feature__meta work-meta">
+            <div class="meta-col">
+              <span class="meta-label">角色</span>
+              <span class="meta-value">产品负责人</span>
+              <span class="meta-value">PRD · 用研 · 落地推进</span>
+            </div>
+            <div class="meta-col">
+              <span class="meta-label">形态</span>
+              <span class="meta-value">移动端 App</span>
+              <span class="meta-value">营销站 · 可嵌入预览</span>
+            </div>
+          </div>
+        </header>
+
+        <div class="work-feature__stage">
+          <div class="work-laptop">
+            <div class="work-laptop__screen">
+              <div class="work-laptop__bezel-top" aria-hidden="true">
+                <span class="work-laptop__camera"></span>
+              </div>
+              <div
+                class="work-slideshow work-feature__viewport"
+                data-work-slideshow
+                data-slide-count="20"
+                data-slide-base="assets/works/unipass/slides/"
+                data-slide-ms="1100"
+                aria-label="UniPass 演示稿自动轮播"
+              >
+                <div class="work-slideshow__stage"></div>
+                <span class="work-slideshow__counter" aria-live="polite">01 / 20</span>
+                <span class="portfolio-embed-hint work-feature__hint">演示稿自动轮播 · 点击顶部打开 Demo</span>
+              </div>
+            </div>
+            <div class="work-laptop__hinge" aria-hidden="true"></div>
+            <div class="work-laptop__base" aria-hidden="true"></div>
+          </div>
+        </div>
+        </div>
+      </article>
+
+      <article class="work-agent" id="work-agent">
+        <div class="work-agent__layout">
+          <div class="work-agent__device-col">
+            <div class="work-agent__glow" aria-hidden="true"></div>
+            <div class="work-agent-phone">
+              <div class="work-agent-phone__chrome">
+                <span class="work-agent-phone__dot"></span>
+                <span class="work-agent-phone__dot"></span>
+                <span class="work-agent-phone__dot"></span>
+              </div>
+              <div class="work-agent-phone__screen work-agent-live">
+                <iframe
+                  src="https://meituan-agent.vercel.app/demo"
+                  title="本地出行 Agent 可交互 Demo"
+                  class="work-agent-live__frame"
+                  loading="lazy"
+                  allow="clipboard-write"
+                ></iframe>
+              </div>
+            </div>
+            <p class="work-agent__hint">↓ 可直接在手机框内体验，与打开 Demo 相同</p>
+          </div>
+
+          <div class="work-agent__copy">
+            <div class="work-number">002</div>
+            <h3 class="work-agent__title">本地探索 Agent</h3>
+            <p class="work-agent__kicker">从一句目标出发，输出可执行的一日方案</p>
+            <p class="work-desc work-agent__desc">
+              面向“周末临时决策”场景的任务型 Agent。用户只需描述目标与约束（时间、同行人、预算、偏好），
+              系统会自动完成任务拆解、路线编排与候选方案筛选，并沉淀为可直接执行的行动清单。
+            </p>
+            <ul class="work-agent__highlights">
+              <li>将模糊需求结构化为「目标-约束-步骤」，减少反复沟通成本</li>
+              <li>输出不是“信息罗列”，而是可落地的分时段执行方案</li>
+              <li>关键动作前置：从“看建议”到“一键执行”形成闭环体验</li>
+            </ul>
+            <a
+              href="https://meituan-agent.vercel.app/demo"
+              class="btn-visit"
+              target="_blank"
+              rel="noopener noreferrer"
+            >新窗口打开 Demo ↗</a>
+            <div class="work-meta work-agent__meta">
+              <div class="meta-col">
+                <span class="meta-label">年份</span>
+                <span class="meta-value">2025</span>
+              </div>
+              <div class="meta-col">
+                <span class="meta-label">职责</span>
+                <span class="meta-value">任务流建模与交互策略</span>
+                <span class="meta-value">规划链路与工具调用设计</span>
+                <span class="meta-value">可交互 Web Demo 全链路实现</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="work-joblens" id="work-joblens">
+        <div class="work-joblens__layout">
+          <div class="work-joblens__copy">
+            <div class="work-joblens__eyebrow">
+              <span class="work-number">003</span>
+              <span class="work-joblens__badge">Chrome 扩展 · Manifest V3</span>
+            </div>
+            <h3 class="work-joblens__title joblens-reveal" style="--jr-delay: 0s">joblens</h3>
+            <p class="work-joblens__kicker joblens-reveal" style="--jr-delay: 0.08s">让 AI 守在侧栏，你专心刷 Boss 的岗位</p>
+            <p class="work-desc work-joblens__desc joblens-reveal" style="--jr-delay: 0.16s">
+              面向 Boss 直聘 Web 的浏览器侧栏助手：不覆盖、不抢操作，把「读 JD → 对照简历画像 → 按需改简历」收进侧栏。
+              单击岗位卡片即可对齐当前 JD，AI 输出仅供参考，投递仍由你决定。
+            </p>
+            <ul class="work-joblens__features">
+              <li class="joblens-reveal" style="--jr-delay: 0.24s">
+                <strong>JD 透视</strong>
+                <span>提炼任职要求与匹配要点，减少反复开页</span>
+              </li>
+              <li class="joblens-reveal" style="--jr-delay: 0.32s">
+                <strong>简历画像</strong>
+                <span>一次录入，多岗位复用同一张「底图」</span>
+              </li>
+              <li class="joblens-reveal" style="--jr-delay: 0.4s">
+                <strong>Adapt 适配</strong>
+                <span>按 JD 缺口给出改简历思路，而非代写代投</span>
+              </li>
+            </ul>
+            <a
+              href="https://joblens-pi.vercel.app/"
+              class="btn-visit joblens-reveal joblens-cta"
+              style="--jr-delay: 0.5s"
+              target="_blank"
+              rel="noopener noreferrer"
+            >立即体验 ↗</a>
+            <div class="work-meta work-joblens__meta joblens-reveal" style="--jr-delay: 0.6s">
+              <div class="meta-col">
+                <span class="meta-label">年份</span>
+                <span class="meta-value">2026.</span>
+              </div>
+              <div class="meta-col">
+                <span class="meta-label">职责</span>
+                <span class="meta-value">场景与流程设计</span>
+                <span class="meta-value">侧栏信息架构</span>
+                <span class="meta-value">开源落地页</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="work-joblens__preview">
+            <div class="work-joblens-browser">
+              <div class="work-joblens-browser__toolbar">
+                <div class="work-joblens-browser__dots" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="work-joblens-browser__url">joblens-pi.vercel.app</div>
+                <span class="work-joblens-browser__tag">Chrome</span>
+              </div>
+              <div
+                class="work-joblens-browser__body"
+                aria-label="joblens 产品页预览（16:9，滚轮浏览）"
+              >
+                <iframe
+                  src="https://joblens-pi.vercel.app/"
+                  title="joblens 产品站预览"
+                  class="work-joblens-browser__frame"
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+            <p class="work-joblens__hint">16:9 预览窗口，使用鼠标滚轮可直接浏览完整页面</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="hardware-projects" class="hardware-hub">
+    <header class="hardware-hub__head">
+      <span class="hardware-hub__eyebrow">Hardware Projects · 课题研究</span>
+      <h2 class="hardware-hub__title">硬件设计研究</h2>
+      <p class="hardware-hub__desc">工业设计背景下的三项课题实践——从 IoT 服务系统到 B 端安全产品，覆盖软硬协同、用户旅程推演与 DFM 落地，构成软件 PM 能力的设计底盘。</p>
+      <span class="hardware-hub__type-tag">学术课题 · 非商业项目</span>
+    </header>
+
+    <div class="hw-overview-grid" aria-label="硬件课题概览">
+      <button type="button" class="hw-overview-card" data-hw-modal="hardware-aura" aria-label="查看 Aura 项目详情">
+        <div class="hw-overview-card__media">
+          <img src="assets/hardware/aura/hero-01.png" alt="Aura 车载机器人场景" decoding="async" />
+        </div>
+        <div class="hw-overview-card__body">
+          <span class="hw-overview-card__index">01</span>
+          <h3 class="hw-overview-card__title">Aura · AI 车载智能情感机器人</h3>
+          <p class="hw-overview-card__desc">高负荷场景下的零干扰情感交互，覆盖软硬协同、CMF 材质策略与座舱原型验证。</p>
+          <div class="hw-overview-card__tags">
+            <span>软硬协同</span><span>智能座舱</span><span>人因工程</span>
+          </div>
+          <span class="hw-overview-card__cta">查看详情 →</span>
+        </div>
+      </button>
+
+      <button type="button" class="hw-overview-card" data-hw-modal="hardware-bond" aria-label="查看 BOND PLAY 项目详情">
+        <div class="hw-overview-card__media">
+          <img src="assets/hardware/bond/hero-home.png" alt="BOND PLAY 智能玩具场景" decoding="async" />
+        </div>
+        <div class="hw-overview-card__body">
+          <span class="hw-overview-card__index">02</span>
+          <h3 class="hw-overview-card__title">BOND PLAY · 产康疗愈 IoT</h3>
+          <p class="hw-overview-card__desc">妈妈手环 + 宝宝智能玩具 + App 三端闭环，串联职场与家庭一整天的情绪服务触点。</p>
+          <div class="hw-overview-card__tags">
+            <span>IoT 生态</span><span>服务设计</span><span>情感化交互</span>
+          </div>
+          <span class="hw-overview-card__cta">查看详情 →</span>
+        </div>
+      </button>
+
+      <button type="button" class="hw-overview-card hw-overview-card--safety" data-hw-modal="hardware-safety" aria-label="查看 Safety Seat 项目详情">
+        <div class="hw-overview-card__media">
+          <img src="assets/hardware/safety/hero-home.png" alt="Safety Seat 展开与折叠形态" decoding="async" />
+        </div>
+        <div class="hw-overview-card__body">
+          <span class="hw-overview-card__index">03</span>
+          <h3 class="hw-overview-card__title">Safety Seat · 便捷式安全座椅</h3>
+          <p class="hw-overview-card__desc">面向网约车 B 端运营场景，以可折叠结构与 DFM 策略解决儿童出行安全配备缺口。</p>
+          <div class="hw-overview-card__tags">
+            <span>可折叠</span><span>B2B2C</span><span>DFM</span>
+          </div>
+          <span class="hw-overview-card__cta">查看详情 →</span>
+        </div>
+      </button>
+    </div>
+
+    <div id="hw-detail-modal" class="hw-detail-modal" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="hw-detail-modal-title">
+      <button type="button" class="hw-detail-modal__backdrop" aria-label="关闭详情"></button>
+      <div class="hw-detail-modal__panel">
+        <header class="hw-detail-modal__bar">
+          <p id="hw-detail-modal-title" class="hw-detail-modal__title"></p>
+          <button type="button" class="hw-detail-modal__close" aria-label="关闭">×</button>
+        </header>
+        <div class="hw-detail-modal__body" id="hw-detail-modal-body"></div>
+      </div>
+    </div>
+
+    <div class="hw-detail-store" aria-hidden="true">
+    <article id="hardware-aura" class="hw-project hw-project--aura">
+    <div class="hardware-aura-hero" data-aura-parallax>
+      <div class="hardware-aura-hero__bg-wrap">
+        <img
+          src="assets/hardware/aura/hero-01.png"
+          alt="Aura 机器人位于汽车中控台的场景渲染图 1"
+          class="hardware-aura-hero__bg is-active"
+          decoding="async"
+        />
+        <img
+          src="assets/hardware/aura/hero-02.png"
+          alt="Aura 机器人位于汽车中控台的场景渲染图 2"
+          class="hardware-aura-hero__bg"
+          decoding="async"
+        />
+        <img
+          src="assets/hardware/aura/hero-03.png"
+          alt="Aura 机器人位于汽车中控台的场景渲染图 3"
+          class="hardware-aura-hero__bg"
+          decoding="async"
+        />
+      </div>
+      <div class="hardware-aura-hero__overlay"></div>
+      <div class="hardware-aura-hero__content">
+        <p class="hardware-aura-hero__index">01 / 英雄区</p>
+        <h2 class="hardware-aura-hero__title">Aura - AI 车载智能情感机器人</h2>
+        <div class="hardware-aura-hero__tags">
+          <span>软硬协同</span>
+          <span>智能座舱</span>
+          <span>人因工程</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hardware-aura__container">
+      <section class="hardware-aura-insight" data-aura-reveal>
+        <div class="hardware-aura-insight__copy">
+          <p class="hardware-aura-section-index aura-reveal-item" style="--aura-delay:0s">02 / 核心洞察</p>
+          <h3 class="aura-reveal-item" style="--aura-delay:0.1s">高负荷场景下的零干扰安全基座</h3>
+          <p class="aura-reveal-item" style="--aura-delay:0.2s">
+            基于 10+ 场用户深访与场景复盘，我将车载交互优先级重构为四层：第一优先级守住高负荷场景下的零干扰安全基座；第二优先级提供场景化功能性情感共鸣；第三优先级通过透明状态与可定制交互强度建立信任；第四优先级才承载个性化效率与生态联动。
+          </p>
+        </div>
+        <div class="hardware-aura-insight__media aura-reveal-item" style="--aura-delay:0.3s">
+          <img
+            src="assets/hardware/aura/priority-pyramid.png"
+            alt="第一第二优先级倒金字塔图"
+            decoding="async"
+          />
+        </div>
+      </section>
+
+      <section class="hardware-aura-arch">
+        <div class="hardware-aura-arch__head">
+          <p class="hardware-aura-section-index">03 / 系统协同与 CMF</p>
+          <h3>Architecture &amp; Design</h3>
+        </div>
+        <div class="hardware-aura-bento">
+          <article class="hardware-aura-card hardware-aura-card--wide hardware-aura-card--expandable" data-aura-expand tabindex="0" role="button" aria-label="展开查看软硬协同链路">
+            <h4>软硬协同链路</h4>
+            <p>从功能 A/B/C 的感知—分析—反馈闭环，到场景化交互方式与 Aura 融合决策，完整呈现座舱内软硬一体协同逻辑。</p>
+            <div class="aura-media-carousel aura-media-carousel--wide" data-aura-carousel aria-label="软硬协同链路自动轮播">
+              <img src="assets/hardware/aura/flow-details/flow-01.png" alt="技术融合：功能 A 情感状态感知与共情交互" class="is-active" decoding="async" />
+              <img src="assets/hardware/aura/flow-details/flow-02.png" alt="技术融合：功能 B 场景化主动服务" decoding="async" />
+              <img src="assets/hardware/aura/flow-details/flow-03.png" alt="技术融合：功能 C 个性化自适应学习" decoding="async" />
+              <img src="assets/hardware/aura/flow-details/flow-04.png" alt="交互方式：场景模式与光效表达" decoding="async" />
+              <img src="assets/hardware/aura/flow-details/flow-05.png" alt="交互方式：情感与场景融合决策" decoding="async" />
+              <div class="aura-media-carousel__dots" aria-hidden="true">
+                <span class="is-active"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <span class="hardware-aura-card__hint">点击放大查看</span>
+          </article>
+          <article class="hardware-aura-card hardware-aura-card--expandable" data-aura-expand tabindex="0" role="button" aria-label="展开查看 CMF 材质策略">
+            <h4>CMF 材质策略</h4>
+            <p>色彩体系、材料工艺与灯光情感映射一体化定义：从雾白灰主色到三区协同光效，支撑座舱内温暖、低干扰的交互质感。</p>
+            <div class="aura-media-carousel" data-aura-carousel aria-label="CMF 分析自动轮播">
+              <img src="assets/hardware/aura/cmf-details/cmf-01.png" alt="CMF 分析：色彩体系" class="is-active" decoding="async" />
+              <img src="assets/hardware/aura/cmf-details/cmf-02.png" alt="CMF 分析：材料与表面处理工艺" decoding="async" />
+              <img src="assets/hardware/aura/cmf-details/cmf-03.png" alt="灯光系统：三区协同架构" decoding="async" />
+              <img src="assets/hardware/aura/cmf-details/cmf-04.png" alt="灯光系统：基础情绪色映射" decoding="async" />
+              <img src="assets/hardware/aura/cmf-details/cmf-05.png" alt="灯光系统：基础情感交互" decoding="async" />
+              <img src="assets/hardware/aura/cmf-details/cmf-06.png" alt="灯光系统：正脸环形光区" decoding="async" />
+              <div class="aura-media-carousel__dots" aria-hidden="true">
+                <span class="is-active"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <span class="hardware-aura-card__hint">点击放大查看</span>
+          </article>
+          <article class="hardware-aura-card hardware-aura-card--expandable" data-aura-expand tabindex="0" role="button" aria-label="展开查看隐蔽式传感器">
+            <h4>隐蔽式传感器</h4>
+            <p>耳侧收音孔 + 广角摄像头 + 环形灯带模块化拆解，验证隐蔽式传感器布局与结构装配可行性。</p>
+            <div class="aura-media-carousel" data-aura-carousel aria-label="细节展示自动轮播">
+              <img src="assets/hardware/aura/sensor-details/detail-01.png" alt="细节展示：正面与侧耳模块" class="is-active" decoding="async" />
+              <img src="assets/hardware/aura/sensor-details/detail-02.png" alt="细节展示：底座与磁吸充电" decoding="async" />
+              <img src="assets/hardware/aura/sensor-details/detail-03.png" alt="细节展示：散热孔与顶部触角" decoding="async" />
+              <img src="assets/hardware/aura/sensor-details/detail-04.png" alt="细节展示：传感器爆炸装配" decoding="async" />
+              <div class="aura-media-carousel__dots" aria-hidden="true">
+                <span class="is-active"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <span class="hardware-aura-card__hint">点击放大查看</span>
+          </article>
+        </div>
+
+        <div id="aura-arch-lightbox" class="aura-lightbox" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="aura-lightbox-title">
+          <button type="button" class="aura-lightbox__backdrop" aria-label="关闭"></button>
+          <div class="aura-lightbox__panel">
+            <button type="button" class="aura-lightbox__close" aria-label="关闭">×</button>
+            <header class="aura-lightbox__head">
+              <h4 id="aura-lightbox-title"></h4>
+              <span class="aura-lightbox__counter" aria-live="polite"></span>
+            </header>
+            <div class="aura-lightbox__stage">
+              <button type="button" class="aura-lightbox__nav aura-lightbox__nav--prev" aria-label="上一张">‹</button>
+              <figure class="aura-lightbox__figure">
+                <img id="aura-lightbox-img" src="" alt="" decoding="async" />
+              </figure>
+              <button type="button" class="aura-lightbox__nav aura-lightbox__nav--next" aria-label="下一张">›</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="hardware-aura-proto hardware-aura-proto--compact">
+        <div class="hardware-aura-proto__layout">
+          <div class="hardware-aura-proto__head">
+            <p class="hardware-aura-section-index">04 / 原型验证</p>
+            <h3>车内原型摆放与视线快测</h3>
+            <p class="hardware-aura-proto__lead">四组简易模型置入真实座舱，从驾驶员视角比对视线遮挡与人机尺度，方案 A 进入深化。</p>
+          </div>
+          <figure class="hardware-aura-proto__figure">
+            <img
+              src="assets/hardware/aura/proto-verification.png"
+              alt="原型制作：车内环境与方案 A–D 视线对比"
+              decoding="async"
+            />
+            <figcaption>Prototype Production · 方案 A–D</figcaption>
+          </figure>
+        </div>
+      </section>
+    </div>
+    </article>
+
+    <article id="hardware-bond" class="hw-project hw-project--bond">
+      <section class="hw-row hw-row--bond hw-row--hero" data-hw-reveal>
+        <div class="hw-row__copy">
+          <p class="hw-row__eyebrow">项目二 / BOND PLAY</p>
+          <h2 class="hw-row__title">产康疗愈 IoT 服务系统</h2>
+          <p class="hw-row__lead">面向产后抑郁康复，以「妈妈手环 + 宝宝智能玩具 + App」构建可验证的三端服务闭环。</p>
+          <div class="hw-row__tags">
+            <span>IoT 生态</span>
+            <span>服务设计</span>
+            <span>情感化交互</span>
+          </div>
+        </div>
+        <div class="hw-row__media hw-row__media--light">
+          <img src="assets/hardware/bond/hero-home.png" alt="BOND PLAY 智能玩具与花盆场景" width="1024" height="575" fetchpriority="high" decoding="async" />
+        </div>
+      </section>
+
+      <section class="hw-row hw-row--bond hw-row--flip">
+        <div class="hw-row__copy">
+          <p class="hw-row__eyebrow">02 / 用户旅程推演</p>
+          <h3 class="hw-row__heading">精细化场景：连接职场与家庭</h3>
+          <p class="hw-row__lead">从「在公司远程陪玩」到「回家破冰」再到「睡前产康」，完整串联妈妈一天的情绪与服务触点。</p>
+          <ul class="hw-row__bullets">
+            <li><strong>三端协同</strong>手环、玩具与 App 分工明确，形成稳定服务闭环。</li>
+            <li><strong>情绪连续</strong>三段场景共用一套交互语言，降低母子分离焦虑。</li>
+            <li><strong>恢复可持续</strong>产康训练与社区支持嵌入日常照护流程。</li>
+          </ul>
+        </div>
+        <div class="hw-row__media hw-row__media--light hw-row__media--zoom" data-hw-zoom role="button" tabindex="0" aria-label="放大查看用户旅程图">
+          <img src="assets/hardware/bond/journey-map-full.png" alt="BOND PLAY 用户旅程图" decoding="async" />
+          <span class="hw-row__zoom-hint" aria-hidden="true">点击放大</span>
+        </div>
+      </section>
+
+      <section class="hw-row hw-row--bond">
+        <div class="hw-row__copy">
+          <p class="hw-row__eyebrow">03 / 三端生态</p>
+          <h3 class="hw-row__heading">软硬协同的产品矩阵</h3>
+          <p class="hw-row__lead">硬件侧覆盖情感化玩具与可穿戴设备，软件侧承接远程互动、状态监测与产康内容，形成 PM 可落地的系统架构。</p>
+        </div>
+        <div class="hw-row__media hw-row__media--light hw-row__media--zoom" data-hw-zoom role="button" tabindex="0" aria-label="放大查看三端产品矩阵">
+          <img src="assets/hardware/bond/products.png" alt="BOND PLAY 三端产品矩阵" decoding="async" />
+          <span class="hw-row__zoom-hint" aria-hidden="true">点击放大</span>
+        </div>
+      </section>
+    </article>
+
+    <article id="hardware-safety" class="hw-project hw-project--safety">
+      <section class="hw-row hw-row--safety hw-row--hero" data-hw-reveal>
+        <div class="hw-row__copy">
+          <p class="hw-row__eyebrow">项目三 / SAFETY SEAT</p>
+          <h2 class="hw-row__title">运营车便捷式安全座椅</h2>
+          <p class="hw-row__lead">面向网约车 B 端运营场景，解决「有法规需求、无合规配备」的儿童出行安全缺口。</p>
+          <div class="hw-row__tags">
+            <span>可折叠</span>
+            <span>B2B2C</span>
+            <span>DFM</span>
+          </div>
+          <ul class="hw-row__bullets">
+            <li><strong>B2B2C</strong>以车队采购为入口，兼顾平台运维与家庭端安全。</li>
+            <li><strong>快部署</strong>降低司机安装成本，提升实际配备率。</li>
+            <li><strong>DFM</strong>结构可制造、可维护，控制 B 端长期运维成本。</li>
+          </ul>
+        </div>
+        <div class="hw-row__media hw-row__media--light">
+          <img src="assets/hardware/safety/hero-home.png" alt="Safety Seat 展开与折叠形态" decoding="async" />
+        </div>
+      </section>
+
+      <section class="hw-row hw-row--safety hw-row--flip" data-safety-counter>
+        <div class="hw-row__copy">
+          <p class="hw-row__eyebrow">02 / 商业洞察</p>
+          <h3 class="hw-row__heading">市场数据验证产品窗口</h3>
+          <p class="hw-row__lead">问卷与访谈显示：立法强制意愿与购买意愿高度重合，为便携安全座椅切入网约车提供明确机会。</p>
+          <div class="hw-row__metrics">
+            <div class="hw-metric">
+              <span class="hw-metric__value" data-count-to="90.5" data-count-suffix="%">0%</span>
+              <span class="hw-metric__label">若立法强制，愿意购买并使用安全座椅</span>
+            </div>
+            <div class="hw-metric">
+              <span class="hw-metric__value" data-count-to="69" data-count-suffix="%">0%</span>
+              <span class="hw-metric__label">认为强制配备安全座椅「非常必要」</span>
+            </div>
+          </div>
+        </div>
+        <div class="hw-row__media hw-row__media--zoom" data-hw-zoom role="button" tabindex="0" aria-label="放大查看市场调研">
+          <img src="assets/hardware/safety/research.png" alt="安全座椅市场调研" decoding="async" />
+          <span class="hw-row__zoom-hint" aria-hidden="true">点击放大</span>
+        </div>
+      </section>
+
+      <section class="hw-row hw-row--safety">
+        <div class="hw-row__copy">
+          <p class="hw-row__eyebrow">03 / 结构剖析</p>
+          <h3 class="hw-row__heading">面向制造设计（DFM）</h3>
+          <p class="hw-row__lead">从 Tether 连接带、阻燃面料到 EPP 注塑底板，完整呈现结构层级、材料策略与 B 端降本思路。</p>
+        </div>
+        <div class="hw-row__media hw-row__media--zoom" data-hw-zoom role="button" tabindex="0" aria-label="放大查看爆炸图">
+          <img src="assets/hardware/safety/exploded.png" alt="安全座椅爆炸图" decoding="async" />
+          <span class="hw-row__zoom-hint" aria-hidden="true">点击放大</span>
+        </div>
+      </section>
+
+      <section class="hw-row hw-row--safety hw-row--flip">
+        <div class="hw-row__copy">
+          <p class="hw-row__eyebrow">04 / 使用场景</p>
+          <h3 class="hw-row__heading">出租车与私家车双场景</h3>
+          <p class="hw-row__lead">兼顾网约车后排空间限制与家庭多车型安装需求，验证产品在真实出行链路中的可用性。</p>
+        </div>
+        <div class="hw-row__media hw-row__media--zoom" data-hw-zoom role="button" tabindex="0" aria-label="放大查看使用场景">
+          <img src="assets/hardware/safety/usage-scenes.png" alt="出租车与私家车使用场景" decoding="async" />
+          <span class="hw-row__zoom-hint" aria-hidden="true">点击放大</span>
+        </div>
+      </section>
+    </article>
+    </div>
+
+    <div id="hw-zoom-lightbox" class="hw-lightbox" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="hw-lightbox-caption">
+      <button type="button" class="hw-lightbox__backdrop" aria-label="关闭"></button>
+      <div class="hw-lightbox__panel">
+        <button type="button" class="hw-lightbox__close" aria-label="关闭">×</button>
+        <figure class="hw-lightbox__figure">
+          <img id="hw-lightbox-img" src="" alt="" decoding="async" />
+        </figure>
+        <p id="hw-lightbox-caption" class="hw-lightbox__caption"></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="capabilities" class="relative z-10 w-full px-6 md:px-12 py-32 border-b border-white/10 bg-[#050505]">
+    <div class="flex justify-between items-start mb-24">
+      <span class="text-xs text-white/50">专业技能</span>
+      <p class="text-sm text-white/60 max-w-xs text-right">以用户为中心，用严密的逻辑和设计品味驱动产品落地。</p>
+    </div>
+
+    <div class="cap-list" data-cap-stagger>
+      <article class="cap-item cap-item--left" style="--cap-delay: 0">
+        <div class="cap-item__line" aria-hidden="true"></div>
+        <div class="cap-item__reveal">
+          <div class="cap-item__inner">
+            <h2 class="cap-item__title">用户洞察与调研</h2>
+            <p class="cap-item__desc">
+              拒绝主观臆断，坚持让目标用户发声。曾主导开展 10+ 场深度访谈与定量调研，精准诊断产品痛点与用户迁移习惯，推导出核心能力视角的迭代方向。
+            </p>
+          </div>
+        </div>
+      </article>
+      <article class="cap-item cap-item--right" style="--cap-delay: 1">
+        <div class="cap-item__line" aria-hidden="true"></div>
+        <div class="cap-item__reveal">
+          <div class="cap-item__inner">
+            <h2 class="cap-item__title">产品规划与设计</h2>
+            <p class="cap-item__desc">
+              具备全局业务视野与强逻辑拆解能力。通过对竞品的深度结构与交互剖析，精准定位功能边界与差异化机会，驱动高可行性的产品方案落地。
+            </p>
+          </div>
+        </div>
+      </article>
+      <article class="cap-item cap-item--left" style="--cap-delay: 2">
+        <div class="cap-item__line" aria-hidden="true"></div>
+        <div class="cap-item__reveal">
+          <div class="cap-item__inner">
+            <h2 class="cap-item__title">AI 产品落地</h2>
+            <p class="cap-item__desc">
+              擅长将大模型前沿能力与真实业务场景深度结合，打通从抽象 AI 概念到高保真可交互原型的丝滑交付。
+            </p>
+          </div>
+        </div>
+      </article>
+      <article class="cap-item cap-item--right" style="--cap-delay: 3">
+        <div class="cap-item__line" aria-hidden="true"></div>
+        <div class="cap-item__reveal">
+          <div class="cap-item__inner">
+            <h2 class="cap-item__title">视觉化表达与沟通</h2>
+            <p class="cap-item__desc">
+              注重“以人为本”的交互体验。跳脱纯文本（PRD）限制，通过可视化的原型直观推演复杂的业务核心链路。降低 0-1 阶段的试错与沟通成本。
+            </p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section growth-path-section" id="growth-path">
+    <div class="section-header">
+      <h2 class="section-title">成长路径</h2>
+      <div class="section-badge">(2021 — 2026)</div>
+    </div>
+
+    <p class="growth-path-subtitle">从工业设计到 AI 产品实践者</p>
+
+    <div class="growth-path-track" aria-label="陈孟秋成长路径时间轴">
+      <article class="growth-path-item">
+        <span class="growth-path-year">2021.09</span>
+        <div class="growth-path-card">
+          <h3>川美工业设计本科</h3>
+          <p>系统学习工业设计方法，建立用户研究、视觉表达与产品落地的基础能力。</p>
+        </div>
+      </article>
+
+      <article class="growth-path-item">
+        <span class="growth-path-year">2022.09</span>
+        <div class="growth-path-card">
+          <h3>校学生会 · 策划部部长</h3>
+          <p>面向 6000+ 学生策划校级活动，负责需求调研、活动方案与跨部门推进，并持续做复盘优化。</p>
+        </div>
+      </article>
+
+      <article class="growth-path-item">
+        <span class="growth-path-year">2023.09</span>
+        <div class="growth-path-card">
+          <h3>校青协 · 宣传部部长</h3>
+          <p>负责公众号内容与视觉物料运营，围绕校园活动输出传播内容，提升信息触达与阅读转化。</p>
+        </div>
+      </article>
+
+      <article class="growth-path-item">
+        <span class="growth-path-year">2025.09</span>
+        <div class="growth-path-card">
+          <h3>川美产品设计研究生</h3>
+          <p>深入学习 AI 产品方法论，聚焦用户需求分析、交互策略与从概念到原型的端到端设计。</p>
+        </div>
+      </article>
+
+      <article class="growth-path-item">
+        <span class="growth-path-year">2026.01</span>
+        <div class="growth-path-card">
+          <h3>芒果 TV 产品实习</h3>
+          <p>参与公司级浏览器插件产品迭代，从需求设计到上线推进，完成 0-1 到 1.0 的实战闭环。</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="interview-qa" class="relative z-10 w-full px-6 md:px-12 py-32 border-b border-white/10 flex flex-col md:flex-row gap-24 bg-[#050505]">
+    <div class="w-full md:w-1/3">
+      <h2 class="text-[4vw] leading-tight font-medium tracking-tighter md:sticky md:top-32">面试官<br /><span class="text-white/40">模拟问答</span></h2>
+    </div>
+    <div class="w-full md:w-2/3 flex flex-col border-t border-white/10">
+      <div class="border-b border-white/10">
+        <button type="button" class="faq-btn w-full py-8 flex justify-between items-center text-left hover:text-[#FF3A00] transition-colors">
+          <span class="text-lg md:text-xl font-medium pr-8 leading-snug">你的设计背景对做产品经理有什么优势？</span>
+          <svg class="faq-icon flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        </button>
+        <div class="faq-content">
+          <p class="text-white/60 leading-relaxed text-sm max-w-2xl bg-white/[0.03] p-4 rounded-sm border-l-2 border-[#FF3A00]">工业与数字产品设计的双重背景赋予我极强的同理心和视觉落地能力。我不仅能梳理商业逻辑和用户流程，还能用 Figma/Axure 快速输出高保真原型，降低产研沟通成本。</p>
+        </div>
+      </div>
+      <div class="border-b border-white/10">
+        <button type="button" class="faq-btn w-full py-8 flex justify-between items-center text-left hover:text-[#FF3A00] transition-colors">
+          <span class="text-lg md:text-xl font-medium pr-8 leading-snug">在芒果 TV 实习期间，你主导了哪些核心工作？</span>
+          <svg class="faq-icon flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        </button>
+        <div class="faq-content">
+          <p class="text-white/60 leading-relaxed text-sm max-w-2xl bg-white/[0.03] p-4 rounded-sm border-l-2 border-[#FF3A00]">负责芒果浏览器插件从 0-1 构建及 1.0→2.0 迭代：竞品调研、组件策略、完整 PRD 与上线推动。首期 Edge 安装 3000+，随后通过 10+ 用户深访构建需求池驱动迭代。</p>
+        </div>
+      </div>
+      <div class="border-b border-white/10">
+        <button type="button" class="faq-btn w-full py-8 flex justify-between items-center text-left hover:text-[#FF3A00] transition-colors">
+          <span class="text-lg md:text-xl font-medium pr-8 leading-snug">UniPass 这个项目是如何落地的？</span>
+          <svg class="faq-icon flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        </button>
+        <div class="faq-content">
+          <p class="text-white/60 leading-relaxed text-sm max-w-2xl bg-white/[0.03] p-4 rounded-sm border-l-2 border-[#FF3A00]">独立从 0-1 负责的 AI Native 项目：痛点洞察、LLM 工作流设计（语义重构与 STAR 结构化），到 vibe coding 完成可交互 Demo。用户访谈验证了"破冰难"和"成就沉淀"是核心痛点，由此定义了组局、职场表达优化、成就胶囊三个核心模块。</p>
+        </div>
+      </div>
+      <div class="border-b border-white/10">
+        <button type="button" class="faq-btn w-full py-8 flex justify-between items-center text-left hover:text-[#FF3A00] transition-colors">
+          <span class="text-lg md:text-xl font-medium pr-8 leading-snug">你如何平衡用户需求与商业目标之间的冲突？</span>
+          <svg class="faq-icon flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        </button>
+        <div class="faq-content">
+          <p class="text-white/60 leading-relaxed text-sm max-w-2xl bg-white/[0.03] p-4 rounded-sm border-l-2 border-[#FF3A00]">我的核心判断标准是：用户愿意为此付出成本（时间/金钱/注意力），且该行为能带动商业指标，二者并不天然对立。在芒果实习期间，用户想要"情绪陪伴"，商业侧想要"内容分发"——我将情绪化 UI 与内容入口设计融合，而非二选一，最终两侧指标均有提升。冲突真正无法调和时，我会用 P0/P1/P2 优先级框架拆解，先保商业底线，再用迭代版本补回用户体验。</p>
+        </div>
+      </div>
+      <div class="border-b border-white/10">
+        <button type="button" class="faq-btn w-full py-8 flex justify-between items-center text-left hover:text-[#FF3A00] transition-colors">
+          <span class="text-lg md:text-xl font-medium pr-8 leading-snug">你的硬件项目经历对做互联网产品经理有什么帮助？</span>
+          <svg class="faq-icon flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        </button>
+        <div class="faq-content">
+          <p class="text-white/60 leading-relaxed text-sm max-w-2xl bg-white/[0.03] p-4 rounded-sm border-l-2 border-[#FF3A00]">硬件项目要求从用户场景出发倒推结构可行性，这种"向后约束"的思维方式让我在做软件需求时更严谨——不会只停留在功能列表，而是追问"这个功能谁来实现、成本多少、边界在哪"。Aura 车载机器人和 BOND PLAY IoT 系统都涉及多端协同架构，让我对软硬件系统联动有直接认知，在与工程师沟通时能更精准提需求、减少来回。</p>
+        </div>
+      </div>
+      <div class="border-b border-white/10">
+        <button type="button" class="faq-btn w-full py-8 flex justify-between items-center text-left hover:text-[#FF3A00] transition-colors">
+          <span class="text-lg md:text-xl font-medium pr-8 leading-snug">加入新团队后，你的前 30 天计划是什么？</span>
+          <svg class="faq-icon flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        </button>
+        <div class="faq-content">
+          <p class="text-white/60 leading-relaxed text-sm max-w-2xl bg-white/[0.03] p-4 rounded-sm border-l-2 border-[#FF3A00]">第 1 周：沉浸式了解产品现状——体验全链路、阅读已有 PRD 和数据报告、跟 1-2 位用户聊天，建立自己对产品的第一性原理判断。第 2 周：搞清楚团队工作流——需求从哪来、怎么评审、怎么排期、上下游怎么协作，找到我能立即贡献价值的切口。第 3-4 周：主动认领一个具体需求，从调研到文档到跟进到评审，完整跑一遍流程，用结果建立信任。我不喜欢"先观察三个月"，倾向于快速验证、快速迭代。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="relative z-10 w-full min-h-[60vh] flex flex-col justify-between pt-12 overflow-hidden bg-[#050505]">
+    <div id="contact" class="px-6 md:px-12 grid grid-cols-2 md:grid-cols-4 gap-6 text-xs text-white/50 relative z-20">
+      <div class="border-b border-white/10 pb-4">
+        <span class="block mb-1 text-white/30">电话</span>
+        <button type="button" class="text-white hover:text-[#FF3A00] transition-colors text-left copy-btn" data-copy="13372660656">133 7266 0656</button>
+      </div>
+      <div class="border-b border-white/10 pb-4">
+        <span class="block mb-1 text-white/30">邮箱</span>
+        <a href="mailto:1091534310@qq.com" class="text-white hover:text-[#FF3A00] transition-colors">1091534310@qq.com</a>
+      </div>
+      <div class="border-b border-white/10 pb-4">
+        <span class="block mb-1 text-white/30">微信</span>
+        <button type="button" class="text-white hover:text-[#FF3A00] transition-colors copy-btn" data-copy="Cc9060666">Cc9060666</button>
+      </div>
+      <div class="border-b border-white/10 pb-4 flex items-end">
+        <a href="assets/resume.pdf" download="陈孟秋-产品实习简历.pdf" class="text-white hover:text-[#FF3A00] transition-colors flex items-center gap-1">
+          下载完整 PDF 简历
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="relative w-full flex-grow flex flex-col justify-end pb-12 mt-24">
+      <div class="absolute inset-0 pointer-events-none opacity-20 mix-blend-screen flex items-end justify-center overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1600&auto=format&fit=crop" alt="" class="w-full h-full object-cover grayscale" />
+        <div class="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/80 to-[#050505]"></div>
+      </div>
+      <h2 class="text-[12vw] leading-[0.8] text-center font-medium tracking-tighter relative z-20">
+        <a href="mailto:1091534310@qq.com" class="hover:scale-[1.02] inline-block transition-transform duration-700">Hire <span class="text-[#FF3A00]">Me.</span></a>
+      </h2>
+      <div class="px-6 md:px-12 flex flex-wrap justify-between gap-4 text-[10px] text-white/40 mt-16 relative z-20">
+        <span>Product Manager Intern Portfolio</span>
+        <button type="button" class="hover:text-white transition-colors" id="back-to-top">回到顶部</button>
+        <span>© <span id="year"></span> 陈孟秋</span>
+        <span class="site-build-tag" title="页面版本号，用于确认是否加载到最新">build <span id="site-version"></span></span>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 bg-white/10 border border-white/20 text-white text-sm px-4 py-2 rounded-md opacity-0 pointer-events-none transition-opacity z-[100]" role="status"></div>
+
+  <script src="js/main.js?v=20260603-contact-nav"></script>
+  <script>
+    document.getElementById("site-version").textContent = window.SITE_VERSION || "—";
+  </script>
+</body>
+</html>
