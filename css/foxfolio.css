@@ -995,6 +995,43 @@ html {
   letter-spacing: -0.02em;
 }
 
+/* 访客：VPN / 网络说明（项目经历区） */
+.demo-access-notice {
+  max-width: 52rem;
+  margin: 0 0 clamp(32px, 4vw, 48px);
+  padding: 14px 18px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 58, 0, 0.22);
+  background: rgba(255, 58, 0, 0.06);
+}
+
+.demo-access-notice__title {
+  margin: 0 0 6px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-red, #ff3a00);
+}
+
+.demo-access-notice__body {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.demo-access-notice__body strong {
+  color: rgba(255, 255, 255, 0.92);
+  font-weight: 600;
+}
+
+.demo-access-notice__meta {
+  margin: 8px 0 0;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.45);
+}
+
 .works-list {
   display: flex;
   flex-direction: column;
@@ -1133,6 +1170,14 @@ html {
 
 .work-feature__actions {
   margin-bottom: clamp(40px, 5vw, 56px);
+}
+
+.work-demo-network-hint {
+  margin: 10px 0 0;
+  max-width: 28rem;
+  font-size: 11px;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.48);
 }
 
 .work-feature__meta {

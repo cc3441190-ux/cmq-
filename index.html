@@ -9,7 +9,7 @@
   <meta name="description" content="陈孟秋 — 产品经理实习生。芒果 TV 实习、UniPass、用户研究与 AI 产品落地。" />
   <title>陈孟秋 · 产品经理实习生</title>
   <script>
-    window.SITE_VERSION = "20260603-unipass-static";
+    window.SITE_VERSION = "20260603-vpn-notice";
     document.addEventListener("DOMContentLoaded", function () {
       var v = window.SITE_VERSION;
       document.querySelectorAll('img[src^="assets/"]').forEach(function (img) {
@@ -19,7 +19,7 @@
       });
     });
   </script>
-  <link rel="stylesheet" href="css/foxfolio.css?v=20260603-unipass-static" />
+  <link rel="stylesheet" href="css/foxfolio.css?v=20260603-vpn-notice" />
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     .faq-content {
@@ -501,6 +501,15 @@
       <div class="section-badge">(03)</div>
     </div>
 
+    <aside class="demo-access-notice" role="note" aria-label="在线 Demo 访问说明">
+      <p class="demo-access-notice__title">在线 Demo 访问说明</p>
+      <p class="demo-access-notice__body">
+        主站与项目介绍页在国内网络下一般可直接浏览。
+        <strong>完整交互体验</strong>（尤其 UniPass 页内 App 预览）部分托管在海外，若加载慢或空白，可尝试切换网络或使用 <strong>VPN</strong> 后刷新，或点击各项目中的「海外完整版」链接——并非站点失效。
+      </p>
+      <p class="demo-access-notice__meta">本地出行 Agent 为同域 mock 演示，通常无需 VPN。</p>
+    </aside>
+
     <div class="works-list">
       <article class="work-feature" id="work-unipass">
         <div class="work-feature__layout">
@@ -547,6 +556,7 @@
               target="_blank"
               rel="noopener noreferrer"
             >体验 Demo ↗</a>
+            <p class="work-demo-network-hint">营销页国内可看；页内 App 实时预览若空白，可开 VPN 或点页内「全站打开 / 海外完整版」。</p>
           </div>
           <div class="work-feature__meta work-meta">
             <div class="meta-col">
@@ -1286,7 +1296,7 @@
 
   <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 bg-white/10 border border-white/20 text-white text-sm px-4 py-2 rounded-md opacity-0 pointer-events-none transition-opacity z-[100]" role="status"></div>
 
-  <script src="js/main.js?v=20260603-unipass-static"></script>
+  <script src="js/main.js?v=20260603-vpn-notice"></script>
   <script>
     document.getElementById("site-version").textContent = window.SITE_VERSION || "—";
   </script>

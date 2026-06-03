@@ -37,6 +37,13 @@ npx --yes serve . -l 8766
 
 详见 [demos/README.md](demos/README.md)、[国内域名部署指南.md](国内域名部署指南.md)。
 
+## 访客 / HR 访问说明（VPN 话术）
+
+主站与国内静态 Demo 一般可直接访问；**UniPass 页内 App 实时预览**等仍走海外托管，国内可能需 **VPN** 或点页内「海外完整版」。
+
+- 完整说明与邮件模板：[访客访问说明.md](访客访问说明.md)
+- 站点「项目经历」区也有访客提示条
+
 ## 简历 PDF
 
 源文件：`产品实习简历.pdf` → 站点内路径：`assets/resume.pdf`  

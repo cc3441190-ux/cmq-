@@ -475,7 +475,7 @@
       const hint = document.createElement("p");
       hint.className = "demo-embed-fallback__hint";
       hint.textContent =
-        "可点击下方在本站打开；若仍无法访问，可试海外完整版（需良好国际网络）。";
+        "可点击下方在本站打开；若仍无法访问，可切换网络或使用 VPN 后打开「海外完整版」。";
 
       const actions = document.createElement("div");
       actions.className = "demo-embed-fallback__actions";
