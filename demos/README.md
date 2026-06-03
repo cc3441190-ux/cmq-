@@ -23,8 +23,10 @@ powershell -File .\scripts\build-unipass-export.ps1
 ```
 
 - **joblens**：从 `Desktop\joblens\website` 复制  
-- **美团 Agent**：`npm run build`（`VITE_PLANNER_MODE=mock`，国内可交互）  
-- **UniPass**：`build-unipass-export.ps1` 导出营销站到 `demos/unipass/`（构建时临时移走 `app/api`）
+- **美团 Agent**：从 Vercel 拉取 `public/assets` 插画后 `npm run build`（`bundled/` 放 JS，`assets/` 放地图与节点图，避免嵌套丢失）  
+- **UniPass**：`build-unipass-export.ps1` 导出营销站 + `public/` 全部图片到 `demos/unipass/`（构建时临时移走 `app/api`）
+
+图片缺失时单独执行：`powershell -File .\scripts\download-meituan-assets.ps1`
 
 ## 构建后
 

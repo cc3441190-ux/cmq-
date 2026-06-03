@@ -1,0 +1,53 @@
+/* 各 Demo 页：国内初步体验 / 海外完整体验 */
+.demo-dual-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.demo-dual-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.demo-dual-btn--cn {
+  color: #fff;
+  background: #ff6b35;
+  border: 1px solid rgba(255, 107, 53, 0.5);
+}
+
+.demo-dual-btn--cn:hover {
+  background: #e8541a;
+  transform: translateY(-1px);
+}
+
+.demo-dual-btn--intl {
+  color: #5c5c6b;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.demo-dual-btn--intl:hover {
+  border-color: rgba(0, 0, 0, 0.22);
+  background: #f8f9fa;
+}
+
+.demo-access-hint {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #6b6b70;
+  max-width: 42rem;
+}
+
+.demo-access-hint strong {
+  color: #1c1c1e;
+}

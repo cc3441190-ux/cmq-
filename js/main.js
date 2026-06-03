@@ -483,7 +483,7 @@
       const localLink = document.createElement("a");
       localLink.className = "demo-embed-fallback__btn";
       localLink.href = localHref;
-      localLink.textContent = "本站打开 Demo";
+      localLink.textContent = "国内初步体验";
       localLink.target = "_blank";
       localLink.rel = "noopener noreferrer";
       actions.appendChild(localLink);
@@ -492,7 +492,7 @@
         const extLink = document.createElement("a");
         extLink.className = "demo-embed-fallback__btn demo-embed-fallback__btn--muted";
         extLink.href = external;
-        extLink.textContent = "海外完整版 ↗";
+        extLink.textContent = "海外完整体验 ↗";
         extLink.target = "_blank";
         extLink.rel = "noopener noreferrer";
         actions.appendChild(extLink);

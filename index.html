@@ -9,7 +9,7 @@
   <meta name="description" content="陈孟秋 — 产品经理实习生。芒果 TV 实习、UniPass、用户研究与 AI 产品落地。" />
   <title>陈孟秋 · 产品经理实习生</title>
   <script>
-    window.SITE_VERSION = "20260603-vpn-notice";
+    window.SITE_VERSION = "20260603-dual-demo-btns";
     document.addEventListener("DOMContentLoaded", function () {
       var v = window.SITE_VERSION;
       document.querySelectorAll('img[src^="assets/"]').forEach(function (img) {
@@ -19,7 +19,7 @@
       });
     });
   </script>
-  <link rel="stylesheet" href="css/foxfolio.css?v=20260603-vpn-notice" />
+  <link rel="stylesheet" href="css/foxfolio.css?v=20260603-dual-demo-btns" />
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     .faq-content {
@@ -285,13 +285,10 @@
         <div class="portfolio-title">i芒果浏览器新标签页插件</div>
       </a>
 
-      <a
-        href="/demos/unipass/marketing/#demo"
+      <div
         class="portfolio-card portfolio-card--embed"
         data-embed-scroll
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="UniPass — 悬停自动浏览网页，点击打开全站"
+        aria-label="UniPass — 悬停自动浏览网页"
       >
         <div class="portfolio-img-wrapper portfolio-embed-viewport">
           <div class="portfolio-embed__scroller">
@@ -304,19 +301,20 @@
               data-demo-external="https://unipass-nu.vercel.app/marketing#demo"
             ></iframe>
           </div>
-          <span class="portfolio-embed-hint">悬停自动浏览 · 点击打开全站</span>
+          <span class="portfolio-embed-hint">悬停自动浏览</span>
         </div>
         <div class="portfolio-title">UniPass</div>
-      </a>
+        <div class="demo-dual-actions">
+          <a href="/demos/unipass/marketing/#demo" class="demo-dual-btn demo-dual-btn--cn">国内初步体验</a>
+          <a href="https://unipass-nu.vercel.app/marketing#demo" class="demo-dual-btn demo-dual-btn--intl" target="_blank" rel="noopener noreferrer">海外完整体验 ↗</a>
+        </div>
+      </div>
 
-      <a
-        href="/demos/meituan-agent/?demo=1"
+      <div
         class="portfolio-card portfolio-card--embed"
         data-embed-scroll
         data-embed-height="4200"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="本地出行 Agent Demo — 悬停自动浏览，点击打开"
+        aria-label="本地出行 Agent Demo — 悬停自动浏览"
       >
         <div class="portfolio-img-wrapper portfolio-embed-viewport">
           <div class="portfolio-embed__scroller">
@@ -329,19 +327,20 @@
               data-demo-external="https://meituan-agent.vercel.app/demo"
             ></iframe>
           </div>
-          <span class="portfolio-embed-hint">悬停自动浏览 · 点击打开全站</span>
+          <span class="portfolio-embed-hint">悬停自动浏览</span>
         </div>
         <div class="portfolio-title">本地出行 Agent</div>
-      </a>
+        <div class="demo-dual-actions">
+          <a href="/demos/meituan-agent/?demo=1" class="demo-dual-btn demo-dual-btn--cn">国内初步体验</a>
+          <a href="https://meituan-agent.vercel.app/demo" class="demo-dual-btn demo-dual-btn--intl" target="_blank" rel="noopener noreferrer">海外完整体验 ↗</a>
+        </div>
+      </div>
 
-      <a
-        href="/demos/joblens/"
+      <div
         class="portfolio-card portfolio-card--embed"
         data-embed-scroll
         data-embed-height="5200"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="joblens — 悬停自动浏览网页，点击打开全站"
+        aria-label="joblens — 悬停自动浏览网页"
       >
         <div class="portfolio-img-wrapper portfolio-embed-viewport">
           <div class="portfolio-embed__scroller">
@@ -354,10 +353,14 @@
               data-demo-external="https://joblens-pi.vercel.app/"
             ></iframe>
           </div>
-          <span class="portfolio-embed-hint">悬停自动浏览 · 点击打开全站</span>
+          <span class="portfolio-embed-hint">悬停自动浏览</span>
         </div>
         <div class="portfolio-title">joblens</div>
-      </a>
+        <div class="demo-dual-actions">
+          <a href="/demos/joblens/" class="demo-dual-btn demo-dual-btn--cn">国内初步体验</a>
+          <a href="https://joblens-pi.vercel.app/" class="demo-dual-btn demo-dual-btn--intl" target="_blank" rel="noopener noreferrer">海外完整体验 ↗</a>
+        </div>
+      </div>
 
       <a
         href="#hardware-projects"
@@ -549,14 +552,11 @@
             <li>Vibe Coding</li>
           </ul>
           <div class="work-feature__actions">
-            <a
-              href="/demos/unipass/marketing/#demo"
-              class="btn-visit rolling-link"
-              data-text="体验 Demo ↗"
-              target="_blank"
-              rel="noopener noreferrer"
-            >体验 Demo ↗</a>
-            <p class="work-demo-network-hint">营销页国内可看；页内 App 实时预览若空白，可开 VPN 或点页内「全站打开 / 海外完整版」。</p>
+            <div class="demo-dual-actions demo-dual-actions--work">
+              <a href="/demos/unipass/marketing/#demo" class="demo-dual-btn demo-dual-btn--cn">国内初步体验</a>
+              <a href="https://unipass-nu.vercel.app/marketing#demo" class="demo-dual-btn demo-dual-btn--intl" target="_blank" rel="noopener noreferrer">海外完整体验 ↗</a>
+            </div>
+            <p class="work-demo-network-hint">国内版含营销页与说明；页内 App 实时预览与完整交互建议用海外版（需 VPN 时见提示）。</p>
           </div>
           <div class="work-feature__meta work-meta">
             <div class="meta-col">
@@ -636,12 +636,10 @@
               <li>输出不是“信息罗列”，而是可落地的分时段执行方案</li>
               <li>关键动作前置：从“看建议”到“一键执行”形成闭环体验</li>
             </ul>
-            <a
-              href="/demos/meituan-agent/?demo=1"
-              class="btn-visit"
-              target="_blank"
-              rel="noopener noreferrer"
-            >新窗口打开 Demo ↗</a>
+            <div class="demo-dual-actions demo-dual-actions--work">
+              <a href="/demos/meituan-agent/?demo=1" class="demo-dual-btn demo-dual-btn--cn">国内初步体验</a>
+              <a href="https://meituan-agent.vercel.app/demo" class="demo-dual-btn demo-dual-btn--intl" target="_blank" rel="noopener noreferrer">海外完整体验 ↗</a>
+            </div>
             <div class="work-meta work-agent__meta">
               <div class="meta-col">
                 <span class="meta-label">年份</span>
@@ -685,13 +683,10 @@
                 <span>按 JD 缺口给出改简历思路，而非代写代投</span>
               </li>
             </ul>
-            <a
-              href="/demos/joblens/"
-              class="btn-visit joblens-reveal joblens-cta"
-              style="--jr-delay: 0.5s"
-              target="_blank"
-              rel="noopener noreferrer"
-            >立即体验 ↗</a>
+            <div class="demo-dual-actions demo-dual-actions--work joblens-reveal" style="--jr-delay: 0.5s">
+              <a href="/demos/joblens/" class="demo-dual-btn demo-dual-btn--cn">国内初步体验</a>
+              <a href="https://joblens-pi.vercel.app/" class="demo-dual-btn demo-dual-btn--intl" target="_blank" rel="noopener noreferrer">海外完整体验 ↗</a>
+            </div>
             <div class="work-meta work-joblens__meta joblens-reveal" style="--jr-delay: 0.6s">
               <div class="meta-col">
                 <span class="meta-label">年份</span>
@@ -1296,7 +1291,7 @@
 
   <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 bg-white/10 border border-white/20 text-white text-sm px-4 py-2 rounded-md opacity-0 pointer-events-none transition-opacity z-[100]" role="status"></div>
 
-  <script src="js/main.js?v=20260603-vpn-notice"></script>
+  <script src="js/main.js?v=20260603-dual-demo-btns"></script>
   <script>
     document.getElementById("site-version").textContent = window.SITE_VERSION || "—";
   </script>

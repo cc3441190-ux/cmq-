@@ -1,17 +1,17 @@
 # Export UniPass marketing static site into demos/unipass
 $ErrorActionPreference = "Stop"
 $Root = Split-Path -Parent $PSScriptRoot
-$Unipass = Join-Path (Split-Path -Parent $Root) "unipass全部\unipass-work"
+$Desktop = Split-Path -Parent $Root
+$UnipassRoot = Get-ChildItem $Desktop -Directory | Where-Object { $_.Name -like "*unipass*" } | Select-Object -First 1
+if (-not $UnipassRoot) { Write-Host "unipass folder not found"; exit 1 }
+$Unipass = Join-Path $UnipassRoot.FullName "unipass-work"
+if (-not (Test-Path $Unipass)) { Write-Host "unipass-work not found"; exit 1 }
+
 $Dest = Join-Path $Root "demos\unipass"
 $ApiDir = Join-Path $Unipass "app\api"
 $ApiOff = Join-Path $Unipass "app\_api_export_off"
 $Nc = Join-Path $Unipass "next.config.ts"
 $NcOrig = Join-Path $PSScriptRoot "next-export.config.ts"
-
-if (-not (Test-Path $Unipass)) {
-  Write-Host "Path not found: $Unipass"
-  exit 1
-}
 
 $ncBackup = Get-Content $Nc -Raw -Encoding UTF8
 $apiMoved = $false
@@ -30,7 +30,7 @@ try {
   Pop-Location
   if (Test-Path $Dest) { Remove-Item $Dest -Recurse -Force }
   Copy-Item (Join-Path $Unipass "out") $Dest -Recurse -Force
-  Write-Host "OK: demos/unipass"
+  Write-Host "OK demos/unipass"
 }
 finally {
   Set-Content -Path $Nc -Value $ncBackup -Encoding UTF8 -NoNewline

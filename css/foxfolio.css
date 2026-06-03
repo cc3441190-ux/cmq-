@@ -995,6 +995,59 @@ html {
   letter-spacing: -0.02em;
 }
 
+/* 国内 / 海外双按钮 */
+.demo-dual-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+  padding: 0 4px 4px;
+}
+
+.demo-dual-actions--work {
+  margin-top: 0;
+  margin-bottom: clamp(24px, 3vw, 32px);
+}
+
+.portfolio-card--embed .demo-dual-actions {
+  margin-top: 8px;
+}
+
+.demo-dual-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.demo-dual-btn--cn {
+  color: #fff;
+  background: rgba(255, 58, 0, 0.88);
+  border: 1px solid rgba(255, 58, 0, 0.5);
+}
+
+.demo-dual-btn--cn:hover {
+  background: rgba(255, 58, 0, 1);
+  transform: translateY(-1px);
+}
+
+.demo-dual-btn--intl {
+  color: rgba(255, 255, 255, 0.82);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.demo-dual-btn--intl:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.28);
+}
+
 /* 访客：VPN / 网络说明（项目经历区） */
 .demo-access-notice {
   max-width: 52rem;

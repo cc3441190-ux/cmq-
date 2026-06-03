@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="demo-dual.css" />
 </head>
 <body>
   <div class="hero-blob hero-blob--1" aria-hidden="true"></div>
@@ -26,7 +27,10 @@
         <a href="#faq">常见问题</a>
       </nav>
       <div class="header-cta">
-        <!-- 直连附件：…/releases/latest/download/<文件名>；Gitee 同理 …/releases/download/<tag>/<文件名> -->
+        <div class="demo-dual-actions">
+          <a class="demo-dual-btn demo-dual-btn--cn" href="/demos/joblens/">国内初步体验</a>
+          <a class="demo-dual-btn demo-dual-btn--intl" href="https://joblens-pi.vercel.app/" target="_blank" rel="noopener noreferrer">海外完整体验 ↗</a>
+        </div>
         <a class="btn btn-ghost btn-sm" href="https://github.com/CC3441190-ux/joblens/releases/latest/download/JobLens-zero-config.zip" rel="noopener noreferrer">下载安装包</a>
         <a class="btn btn-primary btn-sm" href="https://github.com/CC3441190-ux/joblens" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
@@ -43,9 +47,16 @@
           AI 只做协同与建议，<strong>投不投仍由你决定</strong>。
         </p>
         <div class="hero-actions">
+          <div class="demo-dual-actions">
+            <a class="demo-dual-btn demo-dual-btn--cn" href="/demos/joblens/">国内初步体验</a>
+            <a class="demo-dual-btn demo-dual-btn--intl" href="https://joblens-pi.vercel.app/" target="_blank" rel="noopener noreferrer">海外完整体验 ↗</a>
+          </div>
           <a class="btn btn-primary btn-lg" href="https://github.com/CC3441190-ux/joblens" target="_blank" rel="noopener noreferrer">在 GitHub 获取扩展</a>
           <a class="btn btn-secondary btn-lg" href="https://github.com/CC3441190-ux/joblens/releases/latest" target="_blank" rel="noopener noreferrer">查看最新 Release</a>
         </div>
+        <p class="demo-access-hint" style="margin-top:12px">
+          本页为国内静态介绍；扩展完整能力（侧栏与 Boss 页联动）请安装 Chrome 扩展，或开 VPN 访问「海外完整体验」。
+        </p>
         <p class="hero-note">
           <span class="hero-note-strong">免责声明：</span>本工具为<strong>第三方辅助</strong>，与 Boss 直聘<strong>无官方关联</strong>；AI 输出仅供参考，请以平台规则与个人判断为准。
         </p>

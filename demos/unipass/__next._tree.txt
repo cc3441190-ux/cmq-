@@ -1,5 +1,5 @@
 :HL["/demos/unipass/_next/static/chunks/123doanyjnwwq.css","style"]
-:HL["/demos/unipass/_next/static/chunks/0tub_qbr7_h~8.css","style"]
+:HL["/demos/unipass/_next/static/chunks/0v5l4m0uf61a5.css","style"]
 :HL["/demos/unipass/_next/static/media/797e433ab948586e-s.p.09zddjkbdep5a.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/demos/unipass/_next/static/media/caa3a2e1cccd8315-s.p.09~u27dqhyhd6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"CcRYC4XQYcXdLzn4KVkLk"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"JZ-o9aO3DsN6mbBKgAe34"}

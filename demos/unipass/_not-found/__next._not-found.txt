@@ -2,4 +2,4 @@
 2:I[39756,["/demos/unipass/_next/static/chunks/0bfjd~q-hq1ho.js","/demos/unipass/_next/static/chunks/039ww1rkqudj4.js"],"default"]
 3:I[37457,["/demos/unipass/_next/static/chunks/0bfjd~q-hq1ho.js","/demos/unipass/_next/static/chunks/039ww1rkqudj4.js"],"default"]
 4:[]
-0:{"rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"isPartial":false,"staleTime":300,"varyParams":"$W4","buildId":"CcRYC4XQYcXdLzn4KVkLk"}
+0:{"rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"isPartial":false,"staleTime":300,"varyParams":"$W4","buildId":"JZ-o9aO3DsN6mbBKgAe34"}
