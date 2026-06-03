@@ -447,6 +447,82 @@
 
   initEmbedScroll();
 
+  /** 作品 iframe：超时或错误时显示同域 / 海外备用链接 */
+  function initDemoEmbedFallback() {
+    const TIMEOUT_MS = 14000;
+
+    document.querySelectorAll("iframe[data-demo-embed]").forEach((iframe) => {
+      const wrap = iframe.closest(
+        ".portfolio-embed-viewport, .work-agent-phone__screen, .work-joblens-browser__body"
+      );
+      if (!wrap) return;
+
+      wrap.classList.add("demo-embed-wrap");
+      if (wrap.querySelector(".demo-embed-fallback")) return;
+
+      const localHref = iframe.getAttribute("src") || "/demos/";
+      const external = iframe.getAttribute("data-demo-external") || "";
+
+      const fallback = document.createElement("div");
+      fallback.className = "demo-embed-fallback";
+      fallback.hidden = true;
+      fallback.setAttribute("role", "status");
+
+      const title = document.createElement("p");
+      title.className = "demo-embed-fallback__title";
+      title.textContent = "预览加载较慢或暂不可用";
+
+      const hint = document.createElement("p");
+      hint.className = "demo-embed-fallback__hint";
+      hint.textContent =
+        "可点击下方在本站打开；若仍无法访问，可试海外完整版（需良好国际网络）。";
+
+      const actions = document.createElement("div");
+      actions.className = "demo-embed-fallback__actions";
+
+      const localLink = document.createElement("a");
+      localLink.className = "demo-embed-fallback__btn";
+      localLink.href = localHref;
+      localLink.textContent = "本站打开 Demo";
+      localLink.target = "_blank";
+      localLink.rel = "noopener noreferrer";
+      actions.appendChild(localLink);
+
+      if (external) {
+        const extLink = document.createElement("a");
+        extLink.className = "demo-embed-fallback__btn demo-embed-fallback__btn--muted";
+        extLink.href = external;
+        extLink.textContent = "海外完整版 ↗";
+        extLink.target = "_blank";
+        extLink.rel = "noopener noreferrer";
+        actions.appendChild(extLink);
+      }
+
+      fallback.append(title, hint, actions);
+      wrap.appendChild(fallback);
+
+      let shown = false;
+      function showFallback() {
+        if (shown) return;
+        shown = true;
+        iframe.style.visibility = "hidden";
+        iframe.style.pointerEvents = "none";
+        fallback.hidden = false;
+      }
+
+      const timer = window.setTimeout(showFallback, TIMEOUT_MS);
+      iframe.addEventListener("error", () => {
+        window.clearTimeout(timer);
+        showFallback();
+      });
+      iframe.addEventListener("load", () => {
+        window.clearTimeout(timer);
+      });
+    });
+  }
+
+  initDemoEmbedFallback();
+
   /** 项目经历满屏区：PDF 导出页逐张淡入轮播 */
   function initWorkSlideshow() {
     document.querySelectorAll("[data-work-slideshow]").forEach((root) => {

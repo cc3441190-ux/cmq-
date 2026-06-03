@@ -831,6 +831,83 @@ html {
   transform: none;
 }
 
+/* Demo iframe 加载失败兜底（同域名 /demos/ 或海外备用链） */
+.demo-embed-wrap {
+  position: relative;
+}
+
+.demo-embed-fallback {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  text-align: center;
+  background: radial-gradient(
+    ellipse 80% 70% at 50% 40%,
+    rgba(30, 30, 40, 0.95),
+    rgba(5, 5, 8, 0.98)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.demo-embed-fallback[hidden] {
+  display: none !important;
+}
+
+.demo-embed-fallback__title {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.demo-embed-fallback__hint {
+  margin: 0;
+  max-width: 22em;
+  font-size: 11px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.demo-embed-fallback__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.demo-embed-fallback__btn {
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.06);
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.demo-embed-fallback__btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.28);
+}
+
+.demo-embed-fallback__btn--muted {
+  color: rgba(255, 255, 255, 0.55);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.work-agent-phone__screen,
+.work-joblens-browser__body {
+  position: relative;
+}
+
 /* 移动端项目：横版卡片 + 居中手机框 */
 .portfolio-img-wrapper--mobile {
   display: flex;

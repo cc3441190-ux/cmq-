@@ -9,7 +9,7 @@
   <meta name="description" content="陈孟秋 — 产品经理实习生。芒果 TV 实习、UniPass、用户研究与 AI 产品落地。" />
   <title>陈孟秋 · 产品经理实习生</title>
   <script>
-    window.SITE_VERSION = "20260603-contact-nav";
+    window.SITE_VERSION = "20260603-domestic-demos";
     document.addEventListener("DOMContentLoaded", function () {
       var v = window.SITE_VERSION;
       document.querySelectorAll('img[src^="assets/"]').forEach(function (img) {
@@ -19,7 +19,7 @@
       });
     });
   </script>
-  <link rel="stylesheet" href="css/foxfolio.css?v=20260603-contact-nav" />
+  <link rel="stylesheet" href="css/foxfolio.css?v=20260603-domestic-demos" />
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     .faq-content {
@@ -286,7 +286,7 @@
       </a>
 
       <a
-        href="https://unipass-nu.vercel.app/marketing#demo"
+        href="/demos/unipass/marketing#demo"
         class="portfolio-card portfolio-card--embed"
         data-embed-scroll
         target="_blank"
@@ -296,10 +296,12 @@
         <div class="portfolio-img-wrapper portfolio-embed-viewport">
           <div class="portfolio-embed__scroller">
             <iframe
-              src="https://unipass-nu.vercel.app/marketing#demo"
+              src="/demos/unipass/marketing"
               title="UniPass 产品营销页预览"
               loading="lazy"
               tabindex="-1"
+              data-demo-embed
+              data-demo-external="https://unipass-nu.vercel.app/marketing#demo"
             ></iframe>
           </div>
           <span class="portfolio-embed-hint">悬停自动浏览 · 点击打开全站</span>
@@ -308,7 +310,7 @@
       </a>
 
       <a
-        href="https://meituan-agent.vercel.app/demo"
+        href="/demos/meituan-agent/?demo=1"
         class="portfolio-card portfolio-card--embed"
         data-embed-scroll
         data-embed-height="4200"
@@ -319,10 +321,12 @@
         <div class="portfolio-img-wrapper portfolio-embed-viewport">
           <div class="portfolio-embed__scroller">
             <iframe
-              src="https://meituan-agent.vercel.app/demo"
+              src="/demos/meituan-agent/?demo=1"
               title="本地出行 Agent Demo 预览"
               loading="lazy"
               tabindex="-1"
+              data-demo-embed
+              data-demo-external="https://meituan-agent.vercel.app/demo"
             ></iframe>
           </div>
           <span class="portfolio-embed-hint">悬停自动浏览 · 点击打开全站</span>
@@ -331,7 +335,7 @@
       </a>
 
       <a
-        href="https://joblens-pi.vercel.app/"
+        href="/demos/joblens/"
         class="portfolio-card portfolio-card--embed"
         data-embed-scroll
         data-embed-height="5200"
@@ -342,10 +346,12 @@
         <div class="portfolio-img-wrapper portfolio-embed-viewport">
           <div class="portfolio-embed__scroller">
             <iframe
-              src="https://joblens-pi.vercel.app/"
+              src="/demos/joblens/"
               title="joblens 产品页预览"
               loading="lazy"
               tabindex="-1"
+              data-demo-embed
+              data-demo-external="https://joblens-pi.vercel.app/"
             ></iframe>
           </div>
           <span class="portfolio-embed-hint">悬停自动浏览 · 点击打开全站</span>
@@ -535,7 +541,7 @@
           </ul>
           <div class="work-feature__actions">
             <a
-              href="https://unipass-nu.vercel.app/marketing#demo"
+              href="/demos/unipass/marketing#demo"
               class="btn-visit rolling-link"
               data-text="体验 Demo ↗"
               target="_blank"
@@ -594,11 +600,13 @@
               </div>
               <div class="work-agent-phone__screen work-agent-live">
                 <iframe
-                  src="https://meituan-agent.vercel.app/demo"
+                  src="/demos/meituan-agent/?demo=1"
                   title="本地出行 Agent 可交互 Demo"
                   class="work-agent-live__frame"
                   loading="lazy"
                   allow="clipboard-write"
+                  data-demo-embed
+                  data-demo-external="https://meituan-agent.vercel.app/demo"
                 ></iframe>
               </div>
             </div>
@@ -619,7 +627,7 @@
               <li>关键动作前置：从“看建议”到“一键执行”形成闭环体验</li>
             </ul>
             <a
-              href="https://meituan-agent.vercel.app/demo"
+              href="/demos/meituan-agent/?demo=1"
               class="btn-visit"
               target="_blank"
               rel="noopener noreferrer"
@@ -668,7 +676,7 @@
               </li>
             </ul>
             <a
-              href="https://joblens-pi.vercel.app/"
+              href="/demos/joblens/"
               class="btn-visit joblens-reveal joblens-cta"
               style="--jr-delay: 0.5s"
               target="_blank"
@@ -694,7 +702,7 @@
                 <div class="work-joblens-browser__dots" aria-hidden="true">
                   <span></span><span></span><span></span>
                 </div>
-                <div class="work-joblens-browser__url">joblens-pi.vercel.app</div>
+                <div class="work-joblens-browser__url">…/demos/joblens</div>
                 <span class="work-joblens-browser__tag">Chrome</span>
               </div>
               <div
@@ -702,10 +710,12 @@
                 aria-label="joblens 产品页预览（16:9，滚轮浏览）"
               >
                 <iframe
-                  src="https://joblens-pi.vercel.app/"
+                  src="/demos/joblens/"
                   title="joblens 产品站预览"
                   class="work-joblens-browser__frame"
                   loading="lazy"
+                  data-demo-embed
+                  data-demo-external="https://joblens-pi.vercel.app/"
                 ></iframe>
               </div>
             </div>
@@ -1276,7 +1286,7 @@
 
   <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 bg-white/10 border border-white/20 text-white text-sm px-4 py-2 rounded-md opacity-0 pointer-events-none transition-opacity z-[100]" role="status"></div>
 
-  <script src="js/main.js?v=20260603-contact-nav"></script>
+  <script src="js/main.js?v=20260603-domestic-demos"></script>
   <script>
     document.getElementById("site-version").textContent = window.SITE_VERSION || "—";
   </script>

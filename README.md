@@ -20,17 +20,22 @@ npx --yes serve . -l 8766
 
 ## 部署到 Vercel（推荐）
 
-1. 把本文件夹推到 GitHub
-2. 在 [vercel.com](https://vercel.com) 导入仓库，框架选 **Other**，输出目录留空（静态根目录即 `index.html`）
-3. 获得形如 `https://xxx.vercel.app` 的公开链接，可写进简历
+1. 把本文件夹推到 GitHub（双击 `推送GitHub.bat`）
+2. 在 [vercel.com](https://vercel.com) 导入仓库，框架选 **Other**，输出目录留空
+3. 绑定自定义域名（如 `www.chenmengqiu-portfolio.xyz`），DNS 在阿里云解析
 
-## Vibe Coding 项目链接
+## Vibe Coding 项目（同域名，无需再买域名）
 
-| 项目 | 链接 |
-|------|------|
-| UniPass | https://unipass-nu.vercel.app/marketing#demo |
-| 本地生活 Agent | https://meituan-agent-ak8w9zumh-cc3441190-uxs-projects.vercel.app/ |
-| joblens | https://joblens-pi.vercel.app/ |
+作品集内链与 iframe 已改为本站路径；`vercel.json` 会反代到原 Vercel 项目。  
+若将各项目 `build` 输出放入 `demos/项目名/`，则优先使用本地静态文件（更适合备案后迁 OSS）。
+
+| 项目 | 本站路径 |
+|------|----------|
+| UniPass | `/demos/unipass/marketing` |
+| 本地出行 Agent | `/demos/meituan-agent/?demo=1` |
+| joblens | `/demos/joblens/` |
+
+详见 [demos/README.md](demos/README.md)、[国内域名部署指南.md](国内域名部署指南.md)。
 
 ## 简历 PDF
 
