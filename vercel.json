@@ -1,14 +1,6 @@
 {
   "rewrites": [
     {
-      "source": "/demos/unipass",
-      "destination": "https://unipass-nu.vercel.app/marketing"
-    },
-    {
-      "source": "/demos/unipass/:path*",
-      "destination": "https://unipass-nu.vercel.app/:path*"
-    },
-    {
       "source": "/demos/meituan-agent",
       "destination": "https://meituan-agent.vercel.app/demo"
     },

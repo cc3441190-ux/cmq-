@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[39756,["/demos/unipass/_next/static/chunks/0bfjd~q-hq1ho.js","/demos/unipass/_next/static/chunks/039ww1rkqudj4.js"],"default"]
+3:I[37457,["/demos/unipass/_next/static/chunks/0bfjd~q-hq1ho.js","/demos/unipass/_next/static/chunks/039ww1rkqudj4.js"],"default"]
+:HL["/demos/unipass/_next/static/chunks/0l2s7~xz1s6ty.css","style"]
+:HL["/demos/unipass/_next/static/chunks/0ee-w50i78756.css","style"]
+0:{"rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/demos/unipass/_next/static/chunks/0l2s7~xz1s6ty.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/demos/unipass/_next/static/chunks/0ee-w50i78756.css","precedence":"next"}]],["$","div",null,{"className":"inter_f125e2cb-module___JNHbW__variable noto_sans_sc_83783893-module__jLk0hW__variable min-h-full antialiased","style":{"fontFamily":"var(--font-marketing-cn), var(--font-marketing-en), system-ui, sans-serif"},"children":["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"CcRYC4XQYcXdLzn4KVkLk"}

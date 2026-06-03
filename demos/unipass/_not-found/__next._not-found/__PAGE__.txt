@@ -1,0 +1,9 @@
+1:"$Sreact.fragment"
+2:I[47257,["/demos/unipass/_next/static/chunks/0bfjd~q-hq1ho.js","/demos/unipass/_next/static/chunks/039ww1rkqudj4.js"],"ClientPageRoot"]
+3:I[36768,["/demos/unipass/_next/static/chunks/0bfjd~q-hq1ho.js","/demos/unipass/_next/static/chunks/039ww1rkqudj4.js","/demos/unipass/_next/static/chunks/0inbkii0h73sz.js"],"default"]
+6:I[97367,["/demos/unipass/_next/static/chunks/0bfjd~q-hq1ho.js","/demos/unipass/_next/static/chunks/039ww1rkqudj4.js"],"OutletBoundary"]
+7:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","script","script-0",{"src":"/demos/unipass/_next/static/chunks/0inbkii0h73sz.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"CcRYC4XQYcXdLzn4KVkLk"}
+4:{}
+5:"$0:rsc:props:children:0:props:serverProvidedParams:params"
+8:null
